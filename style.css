@@ -1,0 +1,75 @@
+body{
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: black;
+}
+#div1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.text{
+    font-size: 1.5rem;
+    font-weight: bold;
+    font-family: sans-serif;
+}
+#input{
+    width: 120px;
+    height: 25px;
+    text-align: center;
+    font-size: 1rem;
+    background-color: gold;
+    border: none;
+    font-weight: bold;
+}
+#bt{
+    font-size: 1.5rem;
+    background-color: hsl(0, 0%, 10%);
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    color: gold;
+}
+#output{
+    font-size: 4rem;
+}
+#bt:active{
+    background-color: hsl(0, 0%, 0%);
+    font-size: 1.6rem;
+    color: hsl(51, 100%, 40%);
+}
+#bt:hover{
+    background-color: hsl(0, 0%, 0%);
+    color: hsl(51, 100%, 40%);
+}
+img{
+    width: 90px;
+    visibility: hidden;
+    animation: rotate 3s linear infinite paused;
+}
+@keyframes rotate{
+    0%{
+        transform: rotateZ(0)
+    }
+    100%{
+        transform: rotateZ(360deg)
+    }
+}
+#oddsdisplay{
+    font-size: 1.3rem;
+}
+#container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 1px;
+    height: 450px;
+    width: 500px;
+    padding: 50px;
+    border-radius: 10px;
+   background: white; 
+}
